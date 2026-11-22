@@ -1,0 +1,9 @@
+# Generated scans and internal inventories
+lab-recon-output/
+recon-output/
+*.pcap
+*.pcapng
+*.log
+*credentials*
+*password*
+.env
