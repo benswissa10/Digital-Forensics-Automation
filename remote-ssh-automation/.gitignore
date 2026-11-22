@@ -1,0 +1,7 @@
+ssh-lab-output/
+*.log
+host_metadata.txt
+.env
+*.pem
+id_rsa
+id_ed25519
