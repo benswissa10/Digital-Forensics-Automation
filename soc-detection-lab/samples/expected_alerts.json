@@ -1,0 +1,32 @@
+{
+  "events_analyzed": 20,
+  "alerts": [
+    {
+      "rule": "Repeated SSH login failures",
+      "source": "192.0.2.10",
+      "target": "192.0.2.20",
+      "count": 5,
+      "window_seconds": 60,
+      "first_seen": "2026-01-01T00:00:00+00:00",
+      "last_seen": "2026-01-01T00:00:20+00:00"
+    },
+    {
+      "rule": "High SYN volume (possible flood)",
+      "source": "198.51.100.10",
+      "target": "192.0.2.20",
+      "count": 10,
+      "window_seconds": 60,
+      "first_seen": "2026-01-01T00:00:00+00:00",
+      "last_seen": "2026-01-01T00:00:27+00:00"
+    },
+    {
+      "rule": "ARP IP-to-MAC mapping changed",
+      "ip": "192.0.2.1",
+      "observed_macs": [
+        "00:11:22:33:44:55",
+        "66:77:88:99:aa:bb"
+      ],
+      "note": "May be legitimate; verify DHCP and switch telemetry."
+    }
+  ]
+}
