@@ -1,0 +1,8 @@
+assessment-output/
+*.log
+services.txt
+*.pcap
+*.pcapng
+.env
+*credentials*
+*password*
