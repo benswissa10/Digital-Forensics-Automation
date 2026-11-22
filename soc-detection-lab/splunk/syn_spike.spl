@@ -1,0 +1,5 @@
+index=soc_lab sourcetype=soc_lab_json type="tcp_syn"
+| bin _time span=1m
+| stats count AS syn_events BY _time src_ip dst_ip
+| where syn_events >= 10
+| table _time src_ip dst_ip syn_events
