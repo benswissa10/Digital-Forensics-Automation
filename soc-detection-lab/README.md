@@ -12,6 +12,20 @@ A **defensive SOC project** that analyzes synthetic JSONL logs for three signals
 - Run automated unit tests
 - Distinguish alerts from confirmed attacks: SYN bursts are not proof of DDoS, and MAC mapping changes are not proof of ARP spoofing
 
+
+## Splunk SPL and incident investigation (reproducible lab material)
+
+The repository also includes **four example Splunk SPL searches** and a documented SSH investigation workflow:
+
+- [Splunk lab setup and validation guide](SPLUNK_LAB_GUIDE.md)
+- [SSH failure threshold rule](splunk/ssh_bruteforce.spl)
+- [Elevated SYN event volume rule](splunk/syn_spike.spl)
+- [ARP IP-to-MAC change rule](splunk/arp_mapping_change.spl)
+- [SSH investigation timeline query](splunk/ssh_investigation.spl)
+- [Sample incident investigation report](incident-report.md)
+
+**Verification boundary:** the Python detector passed its local unit tests on synthetic data. The SPL examples have **not** been run in a connected Splunk instance, and the incident report is a documented **simulation**, not a real incident. Splunk fixed-minute buckets are not identical to the Python rolling 60-second windows.
+
 ## Run (Python 3.9+, standard library only)
 
 ```bash
