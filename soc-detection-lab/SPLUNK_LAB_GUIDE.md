@@ -21,4 +21,4 @@ This folder contains **SPL detection and investigation searches**, not a deploye
 ## Limitations
 The Python detection engine uses **rolling 60-second windows**, while the SPL detection examples use **fixed 1-minute buckets**. They may disagree around minute boundaries. These queries have been reviewed for intended logic but **not run against a Splunk installation** here.
 
-The original classmate-provided Bash script is not included, and this project does **not execute attacks** or connect to a live network. Publish screenshots only after running in your own Splunk instance and redacting sensitive details.
+This project does not execute attacks or connect to a live network. Publish screenshots only after running in your own Splunk instance and redacting sensitive details.
