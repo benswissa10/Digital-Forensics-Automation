@@ -46,7 +46,8 @@ run_optional() {
 run_optional foremost foremost -i "$evidence" -o "$output/foremost"
 run_optional bulk_extractor bulk_extractor -o "$output/bulk_extractor" "$evidence"
 
-# Metadata-only string triage. Never publish the generated data.
+# Content-based keyword triage: output may contain secrets or personal data.
+# Never upload extracted matches or raw evidence to public repositories.
 if command -v strings >/dev/null 2>&1; then
   if strings -a -- "$evidence" | grep -Ei 'password|username|\.exe' > "$output/keyword_hits.txt"; then
     printf '[OK] Extracted keyword matches into private output\n'
