@@ -7,7 +7,7 @@ usage() {
   printf 'Usage: %s <CIDR or IP> <output-directory>\n' "$0"
   printf 'Example: %s 192.0.2.0/28 ./lab-recon-output\n' "$0"
 }
-if [[ \${1:-} == "--help" || \${1:-} == "-h" ]]; then usage; exit 0; fi
+if [[ ${1:-} == "--help" || ${1:-} == "-h" ]]; then usage; exit 0; fi
 if (( $# != 2 )); then usage >&2; exit 2; fi
 target=$1
 out=$2
