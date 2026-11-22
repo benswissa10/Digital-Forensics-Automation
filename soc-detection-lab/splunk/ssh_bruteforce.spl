@@ -1,0 +1,6 @@
+index=soc_lab sourcetype=soc_lab_json type="ssh_failure"
+| bin _time span=1m
+| stats count AS failed_attempts min(_time) AS first_seen max(_time) AS last_seen BY _time src_ip dst_ip
+| where failed_attempts >= 5
+| convert ctime(first_seen) ctime(last_seen)
+| table _time src_ip dst_ip failed_attempts first_seen last_seen
