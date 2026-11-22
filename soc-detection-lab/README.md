@@ -2,7 +2,7 @@
 
 A **defensive SOC project** that analyzes synthetic JSONL logs for three signals: repeated SSH authentication failures, elevated SYN traffic, and changing ARP IP-to-MAC mappings.
 
-**No attacks, scans, or live-network actions are performed.** The code was independently written; it does not copy the classmate's `soc.sh`.
+**No attacks, scans, or live-network actions are performed.**
 
 ## Features
 
