@@ -6,7 +6,7 @@ A collection of **four cybersecurity lab projects** developed during my cybersec
 
 | Project | Primary skills | Files |
 | --- | --- | --- |
-| **Digital Forensics Automation (NX212)** | Bash, evidence hashing, Foremost, Bulk Extractor, optional Volatility | [Script](forensic_triage.sh) |
+| **Digital Forensics Automation (NX212)** | Bash, evidence hashing, Foremost, Bulk Extractor, optional Volatility | [Project](digital-forensics/README.md) |
 | **Network Security & Reconnaissance (NX220)** | Nmap, network scanning, service enumeration, reporting | [Project](network-security/README.md) |
 | **Penetration Testing Assessment (ZX301)** | Controlled service assessment, Bash, Nmap, reporting | [Project](penetration-testing/README.md) |
 | **Remote SSH Automation (NX201)** | Authorized remote Linux inventory, SSH, Bash | [Project](remote-ssh-automation/README.md) |
@@ -15,6 +15,7 @@ A collection of **four cybersecurity lab projects** developed during my cybersec
 The forensic triage workflow hashes authorized evidence, runs optional artifact-extraction tools, collects keyword matches and saves analyst notes locally.
 
 ```bash
+cd digital-forensics
 chmod +x forensic_triage.sh
 ./forensic_triage.sh /path/to/authorized-evidence.raw ./analysis-output
 ```
