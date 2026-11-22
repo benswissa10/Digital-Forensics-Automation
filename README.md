@@ -11,10 +11,10 @@ A forensic triage workflow for authorized evidence files, including SHA-256 evid
 - [Usage and limitations](#digital-forensics-usage)
 
 ### Digital Forensics usage
-\`\`\`bash
+```bash
 chmod +x forensic_triage.sh
 ./forensic_triage.sh /path/to/authorized-evidence.raw ./analysis-output
-\`\`\`
+```
 
 ## 2. Network Security & Reconnaissance (NX220)
 **Tools:** Bash, Nmap, Python 3
