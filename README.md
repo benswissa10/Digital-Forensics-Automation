@@ -1,6 +1,6 @@
 # Cybersecurity Lab Portfolio | Ben Swissa
 
-A collection of **four cybersecurity lab projects** developed during my cybersecurity training, with public-facing Bash refactors documenting practical skills, safe workflows, and technical limitations.
+A collection of **five cybersecurity lab projects** developed during my cybersecurity training, with public-facing Bash refactors documenting practical skills, safe workflows, and technical limitations.
 
 ## Projects
 
@@ -10,6 +10,7 @@ A collection of **four cybersecurity lab projects** developed during my cybersec
 | **Network Security & Reconnaissance (NX220)** | Nmap, network scanning, service enumeration, reporting | [Project](network-security/README.md) |
 | **Penetration Testing Assessment (ZX301)** | Controlled service assessment, Bash, Nmap, reporting | [Project](penetration-testing/README.md) |
 | **Remote SSH Automation (NX201)** | Authorized remote Linux inventory, SSH, Bash | [Project](remote-ssh-automation/README.md) |
+| **SOC Detection Lab (Synthetic)** | Offline SSH failure, TCP SYN and ARP mapping alert triage with Python | [Project](soc-detection-lab/README.md) |
 
 ## Digital Forensics (NX212)
 The forensic triage workflow hashes authorized evidence, runs optional artifact-extraction tools, collects keyword matches and saves analyst notes locally.
