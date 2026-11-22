@@ -1,0 +1,3 @@
+index=soc_lab sourcetype=soc_lab_json (type="ssh_failure" OR type="ssh_success") src_ip="192.0.2.10" dst_ip="192.0.2.20"
+| table _time type src_ip dst_ip username
+| sort 0 _time
