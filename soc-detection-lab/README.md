@@ -49,6 +49,3 @@ Sample output: **20 synthetic events and 3 alerts**, one per scenario. Adjust th
 
 The detection design was locally exercised with synthetic events, producing three alerts, and a four-test unit suite passed. The repository version is documented for reproducibility; **no real attack, SIEM, EDR or production investigation has been validated**. Alerts are triage leads, not conclusions.
 
-## Attribution
-
-Three defensive scenarios were suggested by a separate classmate exercise named `soc.sh`. This is a new independently written detection implementation with synthetic sample data. It is **not** the classmate's code and should not be presented as an independently authored personal project without reviewing and understanding it.
