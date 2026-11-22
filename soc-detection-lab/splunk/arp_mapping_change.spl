@@ -1,0 +1,4 @@
+index=soc_lab sourcetype=soc_lab_json type="arp_observation"
+| stats dc(mac) AS unique_macs values(mac) AS observed_macs count AS observations BY ip
+| where unique_macs > 1
+| table ip unique_macs observed_macs observations
