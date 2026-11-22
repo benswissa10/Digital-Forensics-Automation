@@ -13,18 +13,18 @@ An **NX220-inspired** Bash lab project for authorized network reconnaissance. Th
 - An isolated lab network **you own or are explicitly authorized to test**
 
 ## Usage
-\`\`\`bash
+```bash
 chmod +x network_recon.sh
 ./network_recon.sh 192.0.2.0/28 ./lab-recon-output
-\`\`\`
+```
 
-Type \`YES\` only if you are authorized to scan the specified target. The output directory must not exist already.
+Type `YES` only if you are authorized to scan the specified target. The output directory must not exist already.
 
 ## Outputs
-- \`host_ports.txt\`: initial TCP scan of common ports
-- \`services.txt\`: targeted service enumeration
-- \`run.log\`: execution log
-- \`summary.txt\`: basic review notes
+- `host_ports.txt`: initial TCP scan of common ports
+- `services.txt`: targeted service enumeration
+- `run.log`: execution log
+- `summary.txt`: basic review notes
 
 **Do not upload real internal IP inventories, enumeration outputs, credentials or scan logs to a public repository.**
 
